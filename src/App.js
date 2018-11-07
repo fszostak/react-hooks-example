@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import MyComponent from './components/MyHookedComponent'
+import MyHookedComponent from './components/MyHookedComponent'
+import AnotherHookedComponent from './components/AnotherHookedComponent'
 
 class App extends Component {
   render() {
@@ -13,7 +14,12 @@ class App extends Component {
           <p>React Hooks Example</p>
         </header>
         <section>
-          <MyComponent/>
+          <h1>MyHookedComponent</h1>
+          <MyHookedComponent/>
+        </section>
+        <section>
+          <h1>AnotherHookedComponent</h1>
+          <AnotherHookedComponent/>
         </section>
       </div>
     );
