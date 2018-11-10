@@ -33,6 +33,7 @@ class App extends Component {
           <h1>CounterHookedComponent</h1>
           <h3>(useReducer example)</h3>
           <Counter initial={0} />
+          <Counter initial={5} />
         </section>
 
         <section>

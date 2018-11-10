@@ -9,16 +9,18 @@ export default function CounterHookedComponent(props) {
   return (
     <>
       <ol>
-        List={state.map(item => {
-          return (<li key={item.id}>{item.name}</li>);
+        {state.map(item => {
+          return (<li key={item.id}>
+            {item.name}
+            <button onClick={() => dispatch({type:'delete', id: item.id})}>
+              Delete
+            </button>
+          </li>);
         })}
       </ol>
       <p>
-        <button onClick={() => dispatch({type:'add', name: 'Add'})}>
-          Add
-        </button>
-        <button onClick={() => dispatch({type:'remove', imdex: 1})}>
-          Remove TODO
+        <button onClick={() => dispatch({type:'insert', name: 'New item'})}>
+          New item  
         </button>
       </p>
     </>
