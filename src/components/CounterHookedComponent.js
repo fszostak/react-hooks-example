@@ -10,6 +10,8 @@ export default function CounterHookedComponent(props) {
     <>
       <p>
         Count={state.count}
+      </p>
+      <p>
         <button onClick={() => dispatch({type:'add'})}>
           +
         </button>

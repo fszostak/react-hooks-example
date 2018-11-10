@@ -6,6 +6,7 @@ import My from './components/MyHookedComponent'
 import Another from './components/AnotherHookedComponent'
 import Counter from './components/CounterHookedComponent'
 import List from './components/ListHookedComponent'
+import ListUI from './components/ListElementUIComponent'
 
 class App extends Component {
   render() {
@@ -42,6 +43,12 @@ class App extends Component {
           <List />
         </section>
       
+        <section>
+          <h1>ListElementUIComponent</h1>
+          <h3>(element-react | useReducer example)</h3>
+          <ListUI />
+        </section>
+
       </div>
     );
   }
