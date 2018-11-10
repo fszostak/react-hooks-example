@@ -5,6 +5,7 @@ import './App.css';
 import My from './components/MyHookedComponent'
 import Another from './components/AnotherHookedComponent'
 import Counter from './components/CounterHookedComponent'
+import List from './components/ListHookedComponent'
 
 class App extends Component {
   render() {
@@ -32,6 +33,12 @@ class App extends Component {
           <h1>CounterHookedComponent</h1>
           <h3>(useReducer example)</h3>
           <Counter initial={0} />
+        </section>
+
+        <section>
+          <h1>ListHookedComponent</h1>
+          <h3>(useReducer example)</h3>
+          <List />
         </section>
       
       </div>

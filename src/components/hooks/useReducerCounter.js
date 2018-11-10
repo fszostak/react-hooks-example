@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import { useReducer } from 'react';
 
 function useReducerCounter(initialCounter) {
   return useReducer((state, action) => {
