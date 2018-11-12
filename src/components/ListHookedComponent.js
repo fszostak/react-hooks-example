@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useReducerList } from './hooks/useReducerList';
 
-export default function CounterHookedComponent(props) {
+export default function ListHookedComponent(props) {
  
   const [state, dispatch] = useReducerList();
 
