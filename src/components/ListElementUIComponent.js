@@ -4,7 +4,7 @@ import { Table, Tag, Button } from 'element-react';
 
 import { useReducerList } from './hooks/useReducerList';
 
-export default function ListHookedComponent(props) {
+export default function ListElementUIComponent(props) {
  
   const [state, dispatch] = useReducerList();
 
