@@ -11,4 +11,5 @@ export const defaultLanguage = 'en';
 export const languageList = [
   { 'name': 'EN', 'value': 'en'},
   { 'name': 'PT', 'value': 'pt'},
+  { 'name': 'ES', 'value': 'es'},
 ];

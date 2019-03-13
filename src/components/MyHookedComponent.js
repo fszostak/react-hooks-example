@@ -16,11 +16,11 @@ export default function MyHookedComponent(props) {
   const name = useFormInput('Fabio');
   const surname = useFormInput('Szostak');
   const width = useWindowWidth();
+  
   useDocumentTitle(name.value + ' ' + surname.value);
 
   return (
     <div>
-      <h1>Lang from Context: {t.lang}</h1>
       <section>
         <label>{ t.Name || "Name" }</label>
         <input {...name} />
