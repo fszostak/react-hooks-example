@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 
-import { LangContext } from './LangContext';
+import { LangContext } from '../lang/LangContext';
 
 import { 
   useDocumentTitle,
@@ -11,23 +11,22 @@ import {
 
 export default function MyHookedComponent(props) {
 
+  const t = useContext(LangContext);
+
   const name = useFormInput('Fabio');
   const surname = useFormInput('Szostak');
   const width = useWindowWidth();
-
-  const context = useContext(LangContext);
-
   useDocumentTitle(name.value + ' ' + surname.value);
 
   return (
     <div>
-      <h1>Lang from Context: {context.lang}</h1>
+      <h1>Lang from Context: {t.lang}</h1>
       <section>
-        <label>Name</label>
+        <label>{ t.Name || "Name" }</label>
         <input {...name} />
       </section>
       <section>
-        <label>Surname</label>
+        <label>{ t.Surname || "Surname" }</label>
         <input {...surname} />
       </section>
       <section>
