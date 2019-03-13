@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import { LangContext } from './LangContext';
 
 import { 
   useDocumentTitle,
@@ -13,10 +15,13 @@ export default function MyHookedComponent(props) {
   const surname = useFormInput('Szostak');
   const width = useWindowWidth();
 
+  const context = useContext(LangContext);
+
   useDocumentTitle(name.value + ' ' + surname.value);
 
   return (
     <div>
+      <h1>Lang from Context: {context.lang}</h1>
       <section>
         <label>Name</label>
         <input {...name} />
