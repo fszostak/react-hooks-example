@@ -16,7 +16,7 @@ const ActionHookedComponent = () => {
         const result = await axios(`http://localhost:4000/users`);
         setData(result.data);
       } catch (e) {
-        setError(e.message || 'Unexpected error. ');
+        setError(e.message || 'Unexpected error');
       }
       setLoading(false);
     };
@@ -27,6 +27,7 @@ const ActionHookedComponent = () => {
   if (loading) {
     return <div>Loading</div>
   }
+
   if (error) {
     return <div style={{color: 'red'}}>ERROR: {error}. Try to start mockup server, type: yarn run mock</div>
   }
