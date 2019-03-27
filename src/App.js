@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -16,7 +16,7 @@ function App(props) {
 
   const onChange = (event) => {
     setLang(event.target.value);
-    setTranslations( loadTranslations(event.target.value) );
+    setTranslations( loadTranslations(lang) );
   }
 
   if (!translations) {
