@@ -3,7 +3,7 @@ import React from 'react';
 export const LangContext = React.createContext();
 
 export const loadTranslations = (lang) => {
-  return require(`./translations-${lang}.json`);  
+  return { t: n => {const translations = require(`./translations-${lang}.json`);return translations ? (eval(`translations.${n}`) || n) : n} } ;
 }
 
 export const defaultLanguage = 'en';

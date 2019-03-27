@@ -1,4 +1,5 @@
 {
   "Name": "Nombre", 
-  "Surname": "Apellido" 
+  "Surname": "Apellido",
+  "Width": "Ancho" 
 }

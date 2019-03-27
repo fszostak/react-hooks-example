@@ -11,7 +11,7 @@ import {
 
 export default function MyHookedComponent(props) {
 
-  const t = useContext(LangContext);
+  const lang = useContext(LangContext);
 
   const name = useFormInput('Fabio');
   const surname = useFormInput('Szostak');
@@ -22,15 +22,15 @@ export default function MyHookedComponent(props) {
   return (
     <div>
       <section>
-        <label>{ t.Name || "Name" }</label>
+        <label>{ lang.t("Name") }</label>
         <input {...name} />
       </section>
       <section>
-        <label>{ t.Surname || "Surname" }</label>
+        <label>{ lang.t("Surname") }</label>
         <input {...surname} />
       </section>
       <section>
-        <label>Width=</label>
+        <label>{ lang.t("Width") }=</label>
         {width}
       </section>
     </div>

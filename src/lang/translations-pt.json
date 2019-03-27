@@ -1,4 +1,5 @@
 {
   "Name": "Nome", 
-  "Surname": "Sobrenome" 
+  "Surname": "Sobrenome",
+  "Width": "Largura"
 }
