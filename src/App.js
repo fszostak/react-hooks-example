@@ -15,7 +15,6 @@ function App(props) {
   const [translations, setTranslations] = useState(loadTranslations(defaultLanguage));
 
   const onChange = (event) => {
-    console.log('selected', event.target.value);
     setLang(event.target.value);
     setTranslations( loadTranslations(event.target.value) );
   }
