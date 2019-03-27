@@ -1,5 +1,10 @@
 {
   "Name": "Nombre", 
   "Surname": "Apellido",
-  "Width": "Ancho" 
+  "Width": "Ancho",
+  "First Name": "Nombre", 
+  "Last Name": "Apelido",
+  "Active?": "Activo?",
+  "Posts": "Posts",
+  "Messages": "Mensajes"
 }

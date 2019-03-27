@@ -7,6 +7,7 @@ import My from './components/MyHookedComponent'
 import Another from './components/AnotherHookedComponent'
 import Counter from './components/CounterHookedComponent'
 import List from './components/ListHookedComponent'
+import Action from './components/ActionHookedComponent'
 
 import { LangContext, loadTranslations, defaultLanguage, languageList } from './lang/LangContext'
 
@@ -61,6 +62,12 @@ function App(props) {
             <Counter initial={5} />
           </section>
 
+          <section>
+            <h1>ActionHookedComponent</h1>
+            <h3>(useState/useEffect/useContext/axios example))</h3>
+            <Action />
+          </section>
+        
           <section>
             <h1>ListHookedComponent</h1>
             <h3>(useReducer example)</h3>
